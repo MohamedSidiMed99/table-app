@@ -1,38 +1,105 @@
-.App {
+.App{
   text-align: center;
+  padding:10px 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-header{
+   text-align: center;
 }
+/*-----------Add Data ---------------*/
+.AddData{
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.AddData input{
+  outline: none;
+  width: 300px;
+  margin: 10px 0;
+  height: 20px;
+  padding-left: 5px;
+}
+.AddData .btn{
+  border: none;
+  background-color: #48967a;
+  color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+/*------- select style ----------*/
+.filter{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 10px;
+  padding: 10px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+}
+.filter .filter-item{
+  width: 50%;
+}
+.filter .filter-item .flt{
+  width: 30%;
+  margin: 10px;
+  height: 30px;
+  outline: none;
+}
+/*------- input style ----------*/
+.input{
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  justify-content: center;
+}
+.input input[type="text"]{
+   width: 40%;
+   height: 30px;
+   padding-left:10px ;
+   border-radius: 20px;
+   min-width: 40%;
+   outline: none;
+}
+.input button{
+  margin-left: 20px;
+  border: none;
+  border-radius: 50px;
+  height: 40px;
+  width: 60px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/*------- table style ----------*/
+table{
+  width: 100%;
+  border-collapse: collapse;
+ 
+}
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+table, th, td {
+
+  padding:5px 20px;
+}
+th {
+  background-color: #48967a;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.creator{
+  text-align: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.delete{
+  border: none;
+  background-color: indianred;
+  color: #fff;
+  padding: 5px ;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.update{
+  border: none;
+  background-color:#48967a;
+  color: #fff;
+  padding: 5px ;
+  cursor: pointer;
+  border-radius: 10px;
 }
